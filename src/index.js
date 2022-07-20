@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Component1 from './components/component1';
+
+function Component1(props){
+ console.log.apply('REnder başladı...')}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+  <Component1 aksiyon={uyari}/>
+  <Component1 mesaj={[2, 35, 28, 95]}/>
+  <Component1/>
+  <Component1/>
+  <Component1 mesaj={{ad:"Sema",  soyad:"Dundar"}}/>
+  
+  
+  </>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
